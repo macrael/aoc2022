@@ -1,9 +1,10 @@
 # aoc2022
 
-lets see how far we make it day one was not great.
+lets see how far we make it day one was not great. No gotchas through day 5 yet
 
 TODO
-* get types actually working, maybe config a tsconfig?
+x get types actually working, had to install node
+* might want range math funcs
 
 To install dependencies:
 
@@ -17,4 +18,7 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.0.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To test: 
+```bash
+bun test --watch
+```
