@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
 import { minimumGames, possibleGames } from "./day2"
 
-describe("day01", () => {
+describe("day02", () => {
   test("example", () => {
 
     const input = `

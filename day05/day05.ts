@@ -7,7 +7,7 @@ interface Range {
     len: number,
 }
 
-type Almap = Map<number, AlmapEntry> //{ [src: number]: AlmapEntry }
+type Almap = Map<number, AlmapEntry>
 
 interface AlmapEntry {
     src: number,
@@ -140,8 +140,7 @@ export function seedLocations(almanac: string): number[] {
     const tempHumidityMap = paraseAlmap(tempHumidityString)
     const humidityLocMap = paraseAlmap(humidityLocString)
 
-    const locs = []
-
+    // pull out our initial list of seed ranges
     const seedRanges: Range[] = []
     for (let i = 0; i < seeds.length / 2; i ++) {
 
@@ -151,6 +150,7 @@ export function seedLocations(almanac: string): number[] {
         seedRanges.push({start: initialSeed, len: seedLen})
     }
 
+    // let the ranges flow
     const soil = almapRanges(seedSoilMap, seedRanges)
     const fert = almapRanges(soilFertMap, soil)
     const water = almapRanges(fertWaterMap, fert)
