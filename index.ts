@@ -1,6 +1,5 @@
-import { day05 } from "./day05/day05";
-import { day06 } from "./day06/day06";
+import { day13 } from "./day13/day13";
 
 console.log("Hello via Bun!");
 
-day06()
+day13()
